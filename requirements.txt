@@ -1,0 +1,8 @@
+ipykernel
+numpy
+pandas
+matplolib
+lxml    #used for reading data from html website in pandas
+html5lib    #used for reading data from html website in pandas
+beautifulsoup4 #used for reading data from html website in pandas
+openpyxl #used to read excel file

@@ -1,0 +1,4 @@
+orbit).
+
+Earth observation satellites gather information for reconnaissance, mapping, monitoring the weather, ocean,
+forest, etc. Space telescopes take advantage of outer space's near perfect vacuum to observe objects with

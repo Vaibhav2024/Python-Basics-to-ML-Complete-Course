@@ -1,0 +1,4 @@
+on the ground). Some imaging satellites chose a Sun-synchronous orbit because they can scan the entire
+globe with similar lighting. As the number of satellites and space debris around Earth increases, the
+threat of collision has become more severe. A small number of satellites orbit other bodies (such as
+the Moon, Mars, and the Sun) or many bodies at once (two for a halo orbit, three for a Lissajous

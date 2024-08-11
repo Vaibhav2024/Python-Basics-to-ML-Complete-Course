@@ -1,0 +1,4 @@
+Satellites are placed from the surface to the orbit by launch vehicles, high enough to avoid orbital decay
+by the atmosphere. Satellites can then change or maintain the orbit by propulsion, usually by chemical or
+ion thrusters. As of 2018, about 90% of the satellites orbiting the Earth are in low Earth orbit or
+geostationary orbit; geostationary means the satellites stay still in the sky (relative to a fixed point
