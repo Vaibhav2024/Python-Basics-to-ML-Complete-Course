@@ -6,3 +6,5 @@ lxml    #used for reading data from html website in pandas
 html5lib    #used for reading data from html website in pandas
 beautifulsoup4 #used for reading data from html website in pandas
 openpyxl #used to read excel file
+requests    #This library is used to make HTTP requests to fetch data from the web
+bs4 #It's commonly used in web scraping to extract data from HTML pages
