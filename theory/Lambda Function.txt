@@ -1,0 +1,124 @@
+### **Lambda Function in Python (Anonymous Function)**
+A **lambda function** in Python is a small, anonymous function that is defined using the `lambda` keyword. It can take any number of arguments but can only have one expression.
+
+#### **Syntax of Lambda Function**
+```python
+lambda arguments: expression
+```
+- The **`lambda`** keyword is used to define the function.
+- The function takes **arguments** like a normal function.
+- The **expression** is evaluated and returned.
+
+#### **Example 1: Basic Lambda Function**
+```python
+add = lambda x, y: x + y
+print(add(3, 5))  # Output: 8
+```
+Equivalent to:
+```python
+def add(x, y):
+    return x + y
+print(add(3, 5))
+```
+
+---
+
+## **Key Features of Lambda Functions**
+1. **Anonymous**: Lambda functions do not have a name unless assigned to a variable.
+2. **Single Expression**: They can contain only one expression (no multiple statements).
+3. **Return Value**: The result of the expression is automatically returned (no need for `return`).
+4. **Compact & Readable**: Useful for short, simple operations.
+
+---
+
+## **Why Use Lambda Functions?**
+- **When you need a small, throwaway function** for a short period.
+- **Used inside functions like `map()`, `filter()`, `sorted()`**, where passing a function reference is needed.
+- **To reduce code size** by avoiding unnecessary function definitions.
+
+---
+
+## **Examples of Lambda Functions in Use**
+### **1. Lambda with `map()`**
+The `map()` function applies a given function to all items in an iterable (like a list).
+```python
+numbers = [1, 2, 3, 4, 5]
+squared = list(map(lambda x: x**2, numbers))
+print(squared)  # Output: [1, 4, 9, 16, 25]
+```
+Equivalent to:
+```python
+def square(x):
+    return x**2
+
+squared = list(map(square, numbers))
+```
+
+---
+
+### **2. Lambda with `filter()`**
+The `filter()` function filters elements from an iterable based on a condition.
+```python
+numbers = [10, 15, 20, 25, 30]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)  # Output: [10, 20, 30]
+```
+Equivalent to:
+```python
+def is_even(x):
+    return x % 2 == 0
+
+even_numbers = list(filter(is_even, numbers))
+```
+
+---
+
+### **3. Lambda with `sorted()`**
+Sorting a list of tuples by the second value in each tuple.
+```python
+students = [("Alice", 25), ("Bob", 20), ("Charlie", 22)]
+sorted_students = sorted(students, key=lambda x: x[1])
+print(sorted_students)
+# Output: [('Bob', 20), ('Charlie', 22), ('Alice', 25)]
+```
+Equivalent to:
+```python
+def sort_key(x):
+    return x[1]
+
+sorted_students = sorted(students, key=sort_key)
+```
+
+---
+
+### **4. Lambda in `reduce()`**
+The `reduce()` function (from `functools`) is used to apply a function cumulatively to a sequence.
+```python
+from functools import reduce
+numbers = [1, 2, 3, 4, 5]
+product = reduce(lambda x, y: x * y, numbers)
+print(product)  # Output: 120
+```
+Equivalent to:
+```python
+def multiply(x, y):
+    return x * y
+
+product = reduce(multiply, numbers)
+```
+
+---
+
+## **Limitations of Lambda Functions**
+1. **Limited to a single expression** – cannot contain multiple statements.
+2. **Less readable** – complex operations can make lambda functions harder to understand.
+3. **Difficult to debug** – since they do not have a name (unless assigned), debugging errors can be tricky.
+
+---
+
+## **When to Use Lambda Functions**
+✅ When you need a **small, one-time function** in a short context.  
+✅ When using functions like `map()`, `filter()`, `sorted()`, `reduce()`, etc.  
+❌ **Avoid lambda functions for complex logic**—use named functions instead for clarity.
+
+Would you like me to provide more examples or a real-world use case? 😊
